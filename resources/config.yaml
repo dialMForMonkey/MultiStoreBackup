@@ -1,0 +1,14 @@
+storages_provider:
+  AWS:
+    bucket: xxx
+  GCP:
+    bucket: xxx
+database:
+  file_name: ./
+runtime:
+  split_files:
+    enable: false
+    amount_parts: 0
+  watch:
+    folder: ./
+    extensions_supported: ".jpg,.mp4"

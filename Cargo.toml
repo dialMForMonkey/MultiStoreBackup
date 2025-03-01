@@ -1,0 +1,19 @@
+[package]
+name = "MultiStoreBackup"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yaml-rust2  = "0.10.0"
+tokio-macros = "2.5.0"
+aws-sdk-s3 = "^1.71.0"
+aws-config = { version = "^1", features = ["behavior-version-latest"] }
+tokio = { version = "^1", features = ["macros", "rt", "rt-multi-thread"]  }
+bytes = "1.9.0"
+google-cloud-storage = "0.23.0"
+async-trait = "0.1.86"
+anyhow = "1.0.95"
+chacha20 = "0.9.1"
+aes-gcm = "0.10.3"
+rsa = "0.9.7"
+rand = "0.8.5"
