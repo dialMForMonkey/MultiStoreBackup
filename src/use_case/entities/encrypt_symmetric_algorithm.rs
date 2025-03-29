@@ -7,10 +7,10 @@ use chacha20::{Key, XChaCha20, XNonce};
 
 use crate::use_case::entities::{CryptographySymmetrical, EncryptedSymmetricalAlgorithm};
 
-struct Aes;
-struct ChaCha20;
+pub struct Aes;
+pub struct ChaCha20;
 
-impl CryptographySymmetrical for Aes {
+ impl CryptographySymmetrical for Aes {
     fn encrypt(data:Vec<u8>) -> Result<EncryptedSymmetricalAlgorithm, anyhow::Error>{
 
         let key = Aes256Gcm::generate_key(OsRng);
@@ -54,10 +54,6 @@ impl CryptographySymmetrical for ChaCha20 {
 
             }
         }
-
-
-
-
         Ok(EncryptedSymmetricalAlgorithm {
             encrypted_data,
             secret: key.to_vec(),

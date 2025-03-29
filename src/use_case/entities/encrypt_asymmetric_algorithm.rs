@@ -41,7 +41,7 @@ mod tests {
     use rsa::pkcs1::{DecodeRsaPrivateKey, RsaPrivateKey};
     use rsa::Pkcs1v15Encrypt;
     use crate::use_case::entities::CryptographyAsymmetrical;
-    use crate::use_case::entities::encript_asymmetric_algorithm::RSA;
+    use crate::use_case::entities::encrypt_asymmetric_algorithm::RSA;
 
     #[test]
     fn rsa_test(){
