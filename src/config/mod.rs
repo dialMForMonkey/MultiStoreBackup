@@ -43,7 +43,7 @@ impl Config {
 
         let services:HashMap<String, Services> = keys.iter().fold( HashMap::new(),  |mut acc, (key, value) | {
             let key = key.as_str().unwrap().to_ascii_lowercase();
-            let mut services;
+            let services;
             if key == "aws" {
                 services = Services::AWS(AWS{bucket: value["bucket"].as_str().unwrap().to_ascii_lowercase()});
             } else {

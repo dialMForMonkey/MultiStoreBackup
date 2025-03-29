@@ -1,5 +1,5 @@
 use aes_gcm::aead::OsRng;
-use aes_gcm::{AeadCore, AeadInPlace, Aes256Gcm, Key as aes_gcm_key};
+use aes_gcm::{AeadCore, AeadInPlace, Aes256Gcm};
 use anyhow::anyhow;
 use chacha20::cipher::KeyInit;
 use chacha20::cipher::{KeyIvInit, StreamCipher};
